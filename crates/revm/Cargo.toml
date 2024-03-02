@@ -32,7 +32,6 @@ tokio = { version = "1.35", features = [
 ], optional = true }
 ethers-providers = { version = "2.0", optional = true }
 ethers-core = { version = "2.0", optional = true }
-futures = { version = "0.3.30", optional = true }
 
 [dev-dependencies]
 ethers-contract = { version = "2.0.11", default-features = false }
@@ -51,7 +50,7 @@ test-utils = []
 
 optimism = ["revm-interpreter/optimism", "revm-precompile/optimism"]
 
-ethersdb = ["std", "tokio", "futures", "ethers-providers", "ethers-core"]
+ethersdb = ["std", "tokio", "ethers-providers", "ethers-core"]
 
 dev = [
     "memory_limit",
